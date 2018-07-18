@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-
+        s=s.lower()
         lmind=len(s)
 
         for i in "qwertyuiopasdfghjklzxcvbnm":
@@ -17,8 +17,8 @@ class Solution(object):
         if lmind == len(s):
             return -1
         else:
-            return lmind
+            return (s[lmind],lmind)
 
 s=Solution()
-result=s.firstUniqChar("leetcode")
+result=s.firstUniqChar("Aaaaaba")
 print result
